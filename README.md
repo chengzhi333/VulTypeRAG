@@ -3,7 +3,7 @@
 This is the source code to the paper "VulTypeRAG: Improving Software Vulnerability Type Identification via Retrieval-Augmented Generation and CWE Knowledge Graph". Please refer to the paper for the experimental details.
 
 ## Approach
-![image](https://github.com/chengzhi333/ReVul-CoT/blob/main/figs/ReVul-CoT.png)
+![image](https://github.com/chengzhi333/VulTypeRAG/blob/main/figs/famework.png)
 
 ## About dataset 
 
