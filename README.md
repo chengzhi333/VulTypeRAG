@@ -7,13 +7,13 @@ This is the source code to the paper "VulTypeRAG: Improving Software Vulnerabili
 
 ## About dataset 
 
-The dataset files are large in size, so we have stored them in Google Drive: [Google Drive Link](https://drive.google.com/drive/folders/1CHxBDVnh_GjyFkFCPeJSHdNRhUQaHb5W).
+The dataset files are large in size, so we have stored them in Google Drive: [Google Drive Link](https://drive.google.com/drive/folders/1XHCv3CUSde5AO98ttmdvNQi_gexber42).
 
 
 ## About the experimental results in the paper:
 
 1.The results for `RQ1`, `RQ2`, `RQ3`, `RQ4`, and `RQ5` are stored in their corresponding folders.  
-2.The experimental results for the discussion section are stored in the `LLM` and `token usages` folders.  
+2.The experimental results for the discussion section are stored in the `discussion1` and `discussion2` folders.  
 
 ## For reproducing the experiments:
 
