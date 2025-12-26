@@ -25,7 +25,7 @@ def pure_llm_predict(code, desc):
     # url = "https://yunwu.ai/v1/responses"
     # headers = {
     #     'Accept': 'application/json',
-    #     'Authorization': 'Bearer sk-YPUFgtm5fTSaRLmraSHRG37fF4bM0HqrAEW6dcbyOJFvPoto',
+    #     'Authorization': 'Bearer key',
     #     'Content-Type': 'application/json'
     # }
     #
@@ -55,7 +55,7 @@ def pure_llm_predict(code, desc):
 
     # client = OpenAI(
     #     base_url="https://integrate.api.nvidia.com/v1",
-    #     api_key="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"
+    #     api_key="key"
     # )
     #
     # completion = client.chat.completions.create(
@@ -71,7 +71,7 @@ def pure_llm_predict(code, desc):
 
     # client = OpenAI(
     #     base_url="https://api.qiyiguo.uk/v1",
-    #     api_key="sk-MRL8wIO4dxfGQxKAzzk6zTPpAjWbwi5HMy0Krfjvcl1JFMKu"
+    #     api_key="key"
     # )
     #
     # completion = client.chat.completions.create(
@@ -95,7 +95,7 @@ def pure_llm_predict(code, desc):
 
     # client = OpenAI(
     #     base_url='https://api-inference.modelscope.cn/v1',
-    #     api_key='ms-d7634d70-b5ff-4150-8eb5-f40c171fc6da',  # ModelScope Token
+    #     api_key='key',  # ModelScope Token
     # )
     #
     # response = client.chat.completions.create(
@@ -120,7 +120,7 @@ def pure_llm_predict(code, desc):
     response = requests.post(
         url="https://openrouter.ai/api/v1/chat/completions",
         headers={
-            "Authorization": "Bearer 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",
+            "Authorization": "Bearer key",
             "Content-Type": "application/json"
         },
         data=json.dumps({
@@ -195,3 +195,4 @@ if __name__ == "__main__":
             os.replace(temp_file, output_file)
 
         print(f"✅ 预测完成，结果已保存到 {output_file}")
+
