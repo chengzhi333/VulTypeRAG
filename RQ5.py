@@ -30,7 +30,7 @@ TOPK = 3
 
 # ================== DeepSeek 调用 ==================
 client = OpenAI(
-    api_key="sk-2b62d88b75f041c29aa844889daadfc5",
+    api_key="key",
     base_url="https://api.deepseek.com"
 )
 
@@ -281,36 +281,19 @@ def cot_predict_cwe(query_code, query_desc, retrieved_samples):
 
     # print(prompt)
 
-    # response = client.chat.completions.create(
-    #     model="deepseek-chat",
-    #     messages=[
-    #         {"role": "system", "content": "You are an expert in software vulnerability type identification."},
-    #         {"role": "user", "content": prompt}
-    #     ],
-    #     temperature = 0,
-    #     stream=False
-    # )
-    #
-    # level = response.choices[0].message.content
-    # return level
-    url = "https://api.siliconflow.cn/v1/chat/completions"
-
-    headers = {
-        "Authorization": "Bearer sk-hjuixgznfhezfvufgumzqquskitmnravvrhxjbuzaqodyicx",
-        "Content-Type": "application/json"
-    }
-    payload = {
-        "model": "deepseek-ai/DeepSeek-V3.2-Exp",
-        "messages": [
+    response = client.chat.completions.create(
+        model="deepseek-chat",
+        messages=[
             {"role": "system", "content": "You are an expert in software vulnerability type identification."},
             {"role": "user", "content": prompt}
         ],
-        "temperature": 0
-    }
-    res = requests.post(url, headers=headers, json=payload)
-    res_json = res.json()
-    output = res_json["choices"][0]["message"]["content"]
-    return output.strip()
+        temperature = 0,
+        stream=False
+    )
+    
+    level = response.choices[0].message.content
+    return level
+
 
 
 # ================== 主函数 ==================
@@ -371,3 +354,4 @@ if __name__ == "__main__":
             os.replace(temp_file, output_file)
 
         print(f"✅ 预测完成，结果已保存到 {output_file}")
+
