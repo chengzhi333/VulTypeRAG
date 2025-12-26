@@ -34,7 +34,7 @@ CHAT_TOKENIZER_DIR = "./deepseek_v3_tokenizer"
 
 # ================== DeepSeek 调用 ==================
 client = OpenAI(
-    api_key="sk-2b62d88b75f041c29aa844889daadfc5",
+    api_key="key",
     base_url="https://api.deepseek.com"
 )
 
@@ -431,4 +431,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
