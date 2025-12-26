@@ -18,8 +18,6 @@ The dataset files are large in size, so we have stored them in Google Drive: [Go
 ## For reproducing the experiments:
 
 1.Download the `dataset` and configure the `file paths`.  
-2.Run `knowledge.py`. After execution, you will obtain the knowledge base file train_all_with_nvd_cwe.xlsx.  
-3.Download and install `PostgreSQL`, create a database named `rag-vul`, then create a `vulnerabilities database` under it and install `pgvector`. For details, refer to: https://blog.csdn.net/typeracer/article/details/140711057, After configuration, run `embedding.py` to create the local knowledge base.  
-4.Run `RQ2-RQ5.py` to call the LLM and perform the vulnerability assessment task.  
-5.Run `evaluation.py` to conduct the metric evaluation.  
+2.Run `RQ2-RQ5.py` to call the LLM and perform the SVTI task.  
+3.Run `evaluation.py` to conduct the metric evaluation.  
 
