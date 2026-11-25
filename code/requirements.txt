@@ -1,0 +1,13 @@
+# 最小可运行版本所需依赖
+# 编码器走 HuggingFace 本地权重（首次运行自动下载，约 1GB）
+torch>=2.0
+transformers>=4.30
+faiss-cpu>=1.7
+pandas>=2.0
+numpy>=1.24
+openpyxl>=3.1
+requests>=2.28
+scikit-learn>=1.2
+rapidfuzz>=3              # 可选：C++ 编辑距离，比 numpy 实现快一个量级
+tree-sitter>=0.22         # 仅 build_dataset.py 生成 AST 时需要
+tree-sitter-cpp>=0.22
