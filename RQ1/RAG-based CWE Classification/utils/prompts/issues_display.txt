@@ -1,0 +1,9 @@
+This is a GitHub Issue
+repo:{repo_name}
+owner:{repo_owner}
+Title : {title}
+Issue date:
+
+--- start body ---
+{body}
+--- end body ---

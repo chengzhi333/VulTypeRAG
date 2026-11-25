@@ -1,0 +1,12 @@
+The following is a text with all messages in NANOG mailing list of a month:
+
+- start -
+{text}
+- end -
+
+Reply with just a json and nothing else. It must  a list of json object having the following fields:
+
+- Subject: Subject of the thread
+- vulnerability type: Possible vulnerability type
+- Software: Name of the software of technology with the vulnerability
+- summary: quick explanation of why there is a possible vulnerability

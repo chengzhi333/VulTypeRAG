@@ -1,0 +1,15 @@
+The following is a json list with messages of thread from NANOG:
+
+- start -
+{thread}
+- end -
+
+If you have identified a possible vulnerability, respond with just a json object with the following fields:
+
+- Subject: Subject of the thread
+- Software: Name of the software of technology with the vulnerability
+- vulnerability type: Possible vulnerability type
+- Explanation: explanation of why there is a possible vulnerability.
+
+If there is no possible vulnerability reply with an empy message.
+
