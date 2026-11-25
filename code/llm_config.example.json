@@ -1,0 +1,6 @@
+{
+  "base_url": "https://your-litellm-endpoint/v1",
+  "api_key": "sk-your-key",
+  "model": "your-model-name",
+  "timeout": 120
+}
